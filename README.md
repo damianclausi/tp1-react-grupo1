@@ -49,7 +49,7 @@ El desarrollo fue realizado de forma colaborativa, empleando herramientas modern
 
 ## 🌐 Enlaces
 
-- 🔗 GitHub: [https://github.com/TDS-IFTS29/tp1-react-grupo1](https://github.com/TDS-IFTS29/tp1-react-grupo1)
+- 🔗 GitHub: [https://github.com/damianclausi/tp1-react-grupo1](https://github.com/damianclausi/tp1-react-grupo1)
 - 🔗 Vercel: [https://tp1-react-grupo1.vercel.app](https://tp1-react-grupo1.vercel.app)
 
 ---
