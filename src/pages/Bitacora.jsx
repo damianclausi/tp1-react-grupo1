@@ -6,10 +6,10 @@ export default function Bitacora() {
       <section style={{ marginBottom: '2rem' }}>
         <h3>👥 Roles de los integrantes</h3>
         <ul>
-          <li><strong>Damián Andrés Clausi:</strong> Frontend / Coordinador</li>
-          <li><strong>Antonio Gill:</strong> Backend / API pública</li>
-          <li><strong>Cristian Descosido:</strong> Documentación / JSON</li>
-          <li><strong>Rocío Ailén Gómez:</strong> Diseño / Estilos y responsividad</li>
+          <li><strong>Damián Andrés Clausi:</strong> Desarrollo de interfaz y navegación</li>
+          <li><strong>Antonio Gill:</strong> Desarrollo de API y lógica de negocio</li>
+          <li><strong>Cristian Descosido:</strong> Documentación y pruebas</li>
+          <li><strong>Rocío Ailén Gómez:</strong> Diseño y estilos</li>
         </ul>
       </section>
 
