@@ -20,7 +20,7 @@ export default function Bitacora() {
           <li><strong>GitHub</strong> – control de versiones y repositorio</li>
           <li><strong>Vercel</strong> – despliegue del sitio</li>
           <li><strong>Discord</strong> – comunicación grupal</li>
-          <li><strong>Trello</strong> – organización de tareas (metodología Scrum)</li>
+          <li><strong>Trello</strong> – organización de tareas </li>
         </ul>
       </section>
 
