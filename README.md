@@ -58,6 +58,39 @@ El desarrollo fue realizado de forma colaborativa, empleando herramientas modern
 
 El trabajo fue desarrollado de manera grupal, utilizando herramientas como **Trello**, **Discord** y **GitHub** para la comunicación, seguimiento de tareas y control de versiones.  
 Cada integrante aportó en una sección específica del proyecto y se trabajó de forma colaborativa durante todo el proceso.
+---
+
+## 🚀 Instalación y ejecución local
+
+Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local:
+
+1. **Clona el repositorio:**
+   
+   ```powershell
+   git clone https://github.com/damianclausi/tp1-react-grupo1.git
+   ```
+
+2. **Accede a la carpeta del proyecto:**
+   
+   ```powershell
+   cd tp1-react-grupo1
+   ```
+
+3. **Instala las dependencias:**
+   
+   ```powershell
+   npm install
+   ```
+
+4. **Inicia la aplicación en modo desarrollo:**
+   
+   ```powershell
+   npm run dev
+   ```
+
+5. **Abre la aplicación en tu navegador:**
+   
+   Normalmente se abrirá automáticamente en `http://localhost:5173/`. Si no, abre esa URL manualmente.
 
 ---
 
