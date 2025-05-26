@@ -11,8 +11,16 @@ export default function JsonData() {
             padding: '1rem',
             borderRadius: '8px',
             width: '200px',
-            backgroundColor: '#f9f9f9'
+            backgroundColor: '#f9f9f9',
+            textAlign: 'center'
           }}>
+            {pelicula.caratula && (
+              <img
+                src={pelicula.caratula}
+                alt={`Carátula de ${pelicula.titulo}`}
+                style={{ width: '100%', height: 'auto', borderRadius: '4px', marginBottom: '0.5rem' }}
+              />
+            )}
             <h3>{pelicula.titulo}</h3>
             <p><strong>Director:</strong> {pelicula.director}</p>
             <p><strong>Año:</strong> {pelicula.anio}</p>
