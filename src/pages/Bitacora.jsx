@@ -27,13 +27,10 @@ export default function Bitacora() {
       <section>
         <h3>📌 Metodología de trabajo</h3>
         <p>
-          El equipo adoptó una metodología ágil basada en <strong>Scrum</strong>. Se organizaron tareas semanales,
-          asignadas a cada integrante en un tablero de Trello. Las decisiones se tomaron por consenso en reuniones
-          virtuales vía Discord. El código se gestionó con Git y ramas individuales para cada sección.
+          A cada integrante le correspondió desarrollar su propia SPA (Single Page Application) de manera individual, abordando diferentes temáticas y funcionalidades. El trabajo se realizó de forma autónoma, pero compartiendo avances y resolviendo dudas en conjunto cuando fue necesario.
         </p>
         <p>
-          Al finalizar cada módulo, se revisó en conjunto y se hicieron ajustes finales antes de subir a GitHub y desplegar
-          en Vercel.
+          Al finalizar cada desarrollo, se integraron los aportes en el repositorio grupal y se realizaron pruebas generales antes de la entrega final.
         </p>
       </section>
     </div>
