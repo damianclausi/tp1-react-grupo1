@@ -15,6 +15,7 @@ export default function Sidebar() {
         <li><Link to="/cristian">👨 Cristian</Link></li>
         <li><Link to="/damian">👨 Damián</Link></li>           
         <li><Link to="/rocio">👩 Rocío</Link></li>
+        <li><Link to="/perfil">¡Conocenos!</Link></li>
         <li><Link to="/json">📄 Datos JSON</Link></li>
         <li><Link to="/api">🌐 API Pública</Link></li>
         <li><Link to="/bitacora">📝 Bitácora</Link></li>

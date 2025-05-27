@@ -20,6 +20,8 @@
 
 .damian-avatar {
   width: 120px;
+  height: 120px;
+  object-fit:cover;
   border-radius: 50%;
   margin: 1rem 0;
   border: 3px solid #3b5bdb;

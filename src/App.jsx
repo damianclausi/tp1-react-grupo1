@@ -5,6 +5,7 @@ import Antonio from './pages/Antonio'
 import Damian from './pages/Damian'
 import Cristian from './pages/Cristian'
 import Rocio from './pages/Rocio'
+import Perfil from './pages/Perfil'
 import JsonData from './pages/JsonData'
 import ApiData from './pages/ApiData'
 import Bitacora from './pages/Bitacora'
@@ -22,6 +23,8 @@ export default function App() {
             <Route path="/damian" element={<Damian />} />
             <Route path="/cristian" element={<Cristian />} />
             <Route path="/rocio" element={<Rocio />} />
+            <Route path="/perfil" element={<Perfil />} />
+            <Route path="/perfil/:id" element={<Perfil />} />
             <Route path="/json" element={<JsonData />} />
             <Route path="/api" element={<ApiData />} />
             <Route path="/bitacora" element={<Bitacora />} />
