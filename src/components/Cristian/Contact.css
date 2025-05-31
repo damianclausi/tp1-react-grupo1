@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+    text-align: left;
 }
 
 #contacto label {
@@ -12,7 +13,7 @@
 #contacto input[type="text"],
 #contacto input[type="email"],
 #contacto input[type="tel"] {
-    width: 75%;
+    width: 100%;
     padding: 10px;
     border: 1px solid light-dark(#ccc, #6c757d);
     border-radius: 4px;
@@ -40,6 +41,7 @@
 }
 
 @media (max-width: 768px) {
+
     #contacto input[type="text"],
     #contacto input[type="email"],
     #contacto input[type="tel"] {
