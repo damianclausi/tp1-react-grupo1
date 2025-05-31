@@ -5,6 +5,10 @@
     gap: 20px;
 }
 
+.cristianContainer.dark-theme #habilidades {
+    background-color: #222222;
+}
+
 .habilidades-listado div {
     background-color: light-dark(#e9ecef, #5D5962);
     padding: 15px;
@@ -16,6 +20,10 @@
     border-bottom: 2px solid #f7914d;
     padding-bottom: 5px;
     color: #f7914d;
+}
+
+.cristianContainer.dark-theme .habilidades-listado h3 {
+    color: #272626;
 }
 
 .habilidades-listado li {

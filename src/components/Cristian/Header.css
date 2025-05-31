@@ -1,11 +1,19 @@
 /* Estilos para el Header */
 header {
-    background-color: light-dark(#e9ecef, #3B383F);
-    color: light-dark(#333, #ffffff);
+    background-color: #f1f1f1;
+    color: #333;
     text-align: center;
     padding: 20px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cristianContainer.dark-theme header {
+    background-color: #222222;
 }
 
 header h1 {

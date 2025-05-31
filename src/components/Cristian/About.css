@@ -8,6 +8,10 @@
     flex-grow: 1;
 }
 
+.cristianContainer.dark-theme #sobre-mi {
+    background-color: #222222;
+}
+
 .sobre-mi-container {
     display: flex;
     flex-direction: row;
@@ -18,6 +22,10 @@
     flex-grow: 2;
     padding: 1.5em;
     color: light-dark(#343a40, #dbd9dd);
+}
+
+.cristianContainer.dark-theme .sobre-mi-container p {
+    color: #dbd9dd;
 }
 
 @media (max-width: 768px) {

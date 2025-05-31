@@ -1,11 +1,15 @@
 /* Pie de Página */
 footer {
     text-align: center;
-    background-color: light-dark(#f8f9fa, #343a40);
+    background-color: #f1f1f1;;
     color: light-dark(#6c757d, #f8f9fa);
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cristianContainer.dark-theme footer {
+    background-color: #222222;
 }
 
 footer p {

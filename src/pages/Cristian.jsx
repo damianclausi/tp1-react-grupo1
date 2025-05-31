@@ -14,7 +14,7 @@ import '../pages/Cristian.css'; // Para las variables CSS globales
 export default function Cristian() {
   return (
     <div className='cristianContainer'>
-      {/* <ThemeSwitcher /> */}
+      <ThemeSwitcher />
       <Header />
       <Navbar />
       <main>

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../App.css'; // Importa App.css para las variables CSS globales
+import '../../pages/Cristian.css'
+import './Header.css'
 
 const Header = () => {
   return (

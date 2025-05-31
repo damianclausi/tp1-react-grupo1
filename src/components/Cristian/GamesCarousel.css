@@ -6,9 +6,14 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Ajusta según sea necesario */
+    max-width: 800px;
+    /* Ajusta según sea necesario */
     margin: 0 auto;
     overflow: hidden;
+}
+
+.cristianContainer.dark-theme #juegos {
+    background-color: #222222;
 }
 
 .carousel {
@@ -34,6 +39,10 @@
     text-align: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.cristianContainer.dark-theme .juego p {
+    color: #272626;
 }
 
 .juego:hover {

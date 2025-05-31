@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+.cristianContainer.dark-theme .tarjetas-container {
+    background-color: #222222;
+}
+
 .tarjeta {
     background-color: light-dark(#ffffff, #333333);
     border: 1px solid light-dark(#dee2e6, #555555);
@@ -30,9 +34,12 @@
 
 .tarjeta h3,
 .tarjeta p {
-    color: light-dark(#272626, #f1f1f1);
+    color: #272626;
 }
 
+.cristianContainer.dark-theme .tarjeta h3 {
+    color: #272626;
+}
 /* Estilo para el icono de enlace en las tarjetas */
 .tarjeta h3 .link-icon::after {
     content: '\1F517';

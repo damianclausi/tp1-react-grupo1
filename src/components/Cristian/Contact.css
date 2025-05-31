@@ -6,6 +6,10 @@
     text-align: left;
 }
 
+.cristianContainer.dark-theme #contacto {
+    background-color: #222222;
+}
+
 #contacto label {
     font-weight: bold;
 }

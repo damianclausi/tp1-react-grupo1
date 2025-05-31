@@ -3,22 +3,22 @@ import React, { useEffect } from 'react';
 const ThemeSwitcher = () => {
   useEffect(() => {
     const themeButton = document.getElementById('theme-switcher-grid');
-    const htmlElement = document.documentElement;
+    const cristianContainer = document.querySelector('.cristianContainer');
     const storageKey = 'theme-preference';
 
     const defaultTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
     const applyTheme = (theme) => {
       if (theme === 'dark') {
-        htmlElement.style.colorScheme = 'dark';
+        cristianContainer.classList.add('dark-theme');
         themeButton.classList.add('night-theme');
         localStorage.setItem(storageKey, 'dark');
       } else if (theme === 'light') {
-        htmlElement.style.colorScheme = 'light';
+        cristianContainer.classList.remove('dark-theme');
         themeButton.classList.remove('night-theme');
         localStorage.setItem(storageKey, 'light');
       } else if (theme === 'system') {
-        htmlElement.style.colorScheme = '';
+        cristianContainer.classList.remove('dark-theme');
         themeButton.classList.remove('night-theme');
         localStorage.removeItem(storageKey);
       }
@@ -41,7 +41,7 @@ const ThemeSwitcher = () => {
     };
   }, []);
 
-  return null; // Este componente no renderiza nada, solo maneja la lógica del tema
+  return null;
 };
 
 export default ThemeSwitcher;

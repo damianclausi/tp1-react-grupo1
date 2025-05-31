@@ -6,6 +6,10 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.cristianContainer.dark-theme nav {
+    background-color: #222222;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
