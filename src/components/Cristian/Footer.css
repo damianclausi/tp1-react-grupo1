@@ -1,0 +1,31 @@
+/* Pie de Página */
+footer {
+    text-align: center;
+    background-color: light-dark(#f8f9fa, #343a40);
+    color: light-dark(#6c757d, #f8f9fa);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: inherit;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: light-dark(#333, #f1f1f1);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: light-dark(#080808, #e2e0e0);
+}
