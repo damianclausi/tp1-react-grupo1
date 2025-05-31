@@ -1,0 +1,36 @@
+/* Estilos para la Navegación */
+nav {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: light-dark(#f1f1f1, #171717);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cristianContainer.dark-theme nav {
+    background-color: #222222;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    font-weight: bold;
+    color: light-dark(#333, #f1f1f1);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline #f7914d;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
