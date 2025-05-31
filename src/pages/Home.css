@@ -1,0 +1,25 @@
+.body-home {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 3em;
+  gap: 5em;
+  color: rgb(91, 59, 206)
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.titles h1 {
+  font-size: 3.5em;
+}
+
+.titles p {
+  font-size: 2em;
+}

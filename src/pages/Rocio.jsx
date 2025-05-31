@@ -34,7 +34,7 @@ export default function Rocio() {
       <section id="tarjetas" class="section">
         <h2>proyectos destacados</h2>
         <div class="tarjetas-container">
-          <div class="tarjeta">
+          <div class="rocio-tarjeta">
             <div class="imagen-wrapper">
               <img
                 src="https://github.com/rragmz/portafoliojs/blob/main/img/proyecto1.jpg?raw=true"
@@ -50,7 +50,7 @@ export default function Rocio() {
             </span>
           </div>
 
-          <div class="tarjeta invertida">
+          <div class="rocio-tarjeta invertida">
             <div class="imagen-wrapper">
               <img
                 src="https://github.com/rragmz/portafoliojs/blob/main/img/proyecto2.jpg?raw=true"

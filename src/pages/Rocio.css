@@ -77,9 +77,10 @@ h2 {
 }
 
 /*Tarjetas (proyectos)*/
-.tarjeta {
+.rocio-tarjeta {
   display: flex;
   height: 20em;
+  /* flex-direction: row; */
   flex-direction: row;
   background-color: #be54544b;
   border-radius: 12px;
@@ -116,7 +117,7 @@ h2 {
 .imagen-wrapper:hover img {
   transform: scale(1.5) translate(-10px, -10px);
 }
-.tarjeta .texto {
+.rocio-tarjeta .texto {
   flex: 3; /*El texto solo ocupa el 30% del contenedor*/
   padding: 2rem;
   color: #fff;
@@ -126,18 +127,18 @@ h2 {
   background-color: #0a0a0ab2;
 }
 
-.tarjeta .texto h3 {
+.rocio-tarjeta .texto h3 {
   font-size: 1.2rem;
   color: #fa85cdce;
   margin-bottom: 1rem;
 }
 
-.tarjeta .texto p {
+.rocio-tarjeta .texto p {
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
-.tarjeta.invertida {
+.invertida {
   flex-direction: row-reverse;
 }
 
@@ -246,7 +247,7 @@ h2 {
   }
 
   /*Proyectos (tarjetas)*/
-  .tarjeta {
+  .rocio-tarjeta {
     display: flex;
     height: 30em;
     flex-direction: column;
@@ -256,7 +257,7 @@ h2 {
     flex-direction: column;
   }
 
-  .tarjeta h2 {
+  .rocio-tarjeta h2 {
     font-size: 1.1em;
   }
 
