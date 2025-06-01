@@ -1,18 +1,11 @@
 .perfil-cards-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 5rem;
-  height: 50vh;
-  padding: 2rem; */
   display: flex;
   gap: 5rem;
   height: 45vh;
-  /*width: 10em;*/
 }
 
 .perfil-card {
   width: 18em;
-  /* background: rgba(192, 181, 231, 0.815); */
   background: rgba(255, 249, 249, 0.952);
   border: 2px solid rgb(199, 184, 252);
   border-radius: 1rem;
@@ -27,7 +20,6 @@
   gap: 2em;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(135deg, #e8dcff, #f3eeff); */
   border-radius: 1.5rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -49,4 +41,14 @@
 .perfil-card h3 {
   font-size: 1.5em;
   color: rgb(91, 59, 206);
+}
+
+@media (max-width: 768px) {
+  .perfil-cards-container {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
 }

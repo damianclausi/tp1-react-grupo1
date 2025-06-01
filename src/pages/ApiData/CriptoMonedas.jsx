@@ -26,8 +26,8 @@ export default function CriptoMonedas() {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div>
-      <h2>📈 Precios de Criptomonedas</h2>
+    <div style={{ textAlign: "center" }}>
+      <h3>📈 Precios de Criptomonedas</h3>
       <ul>
         {coins.map((coin) => (
           <li key={coin.id}>

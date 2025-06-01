@@ -25,9 +25,9 @@ export default function DragonBall() {
   if (!personaje) return <p>Cargando personaje de Dragon Ball...</p>;
 
   return (
-    <div>
-      <h2>🌀 Personaje de Dragon Ball (aleatorio)</h2>
-      <h3>{personaje.name}</h3>
+    <div style={{ textAlign: "center" }}>
+      <h3>🌀 Personaje de Dragon Ball (aleatorio)</h3>
+      <h4>{personaje.name}</h4>
       <img
         src={personaje.image}
         alt={personaje.name}

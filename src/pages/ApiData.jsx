@@ -9,8 +9,8 @@ import GatosAleatorios from "./ApiData/GatosAleatorios";
 
 export default function ApiData() {
   return (
-    <div className="contenedor">
-      <h1>🌐 Información desde APIs públicas</h1>
+    <div className="api-data-contenedor">
+      <h2>🌐 Información desde APIs públicas</h2>
 
       <div className="grid">
         <div className="tarjeta">

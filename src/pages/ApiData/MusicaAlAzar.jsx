@@ -24,8 +24,8 @@ export default function MusicaAlAzar() {
   if (canciones.length === 0) return <p>Cargando canciones...</p>;
 
   return (
-    <div>
-      <h2>🎵 Canciones al Azar (iTunes)</h2>
+    <div style={{ textAlign: "center" }}>
+      <h3>🎵 Canciones al Azar (iTunes)</h3>
       <ul>
         {canciones.map((cancion) => (
           <li key={cancion.trackId}>

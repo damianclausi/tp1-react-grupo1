@@ -1,19 +1,68 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export default function Sidebar() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [open, setOpen] = useState(false);
+
+  // Escuchar cambios de tamaño de ventana
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      if (window.innerWidth >= 768) {
+        setOpen(true); // siempre abierto en desktop
+      } else {
+        setOpen(false); // cerrado en mobile por defecto
+      }
+    };
+
+    handleResize(); // configurar en primer render
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div
-      style={{
-        width: "15rem",
-        backgroundColor: "rgb(91, 59, 206)",
-        padding: "2rem",
-        borderRadius: "0 20px 20px 0",
-        alignItems: "center",
-        // boxShadow: "2px 0 4px rgba(0,0,0,0.1)",
-      }}
-    >
-      <h3>
-        <svg
+    <>
+      {/* Botón hamburguesa solo en móvil */}
+      {isMobile && (
+        <button
+          onClick={() => setOpen(!open)}
+          style={{
+            position: "fixed",
+            top: "1rem",
+            left: "1rem",
+            zIndex: 1000,
+            background: "transparent",
+            border: "none",
+            fontSize: "2rem",
+            color: "white",
+            cursor: "pointer",
+          }}
+        >
+          ☰
+        </button>
+      )}
+
+      {/* Sidebar */}
+      <div
+        style={{
+          width: open ? "15rem" : isMobile ? "0" : "15rem",
+          backgroundColor: "rgb(91, 59, 206)",
+          padding: open ? "2rem" : isMobile ? "0" : "2rem",
+          borderRadius: "0 20px 20px 0",
+          overflow: "hidden",
+          transition: "width 0.3s ease, padding 0.3s ease",
+          height: "100vh",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 999,
+        }}
+      >
+        {open && (
+          <>
+            <h3 style={{ textAlign: "center" }}>
+            <svg
           style={{ width: "7rem", height: "7rem" , margin: "0 auto"}}
           viewBox="0 0 24 24"
           fill="none"
@@ -46,36 +95,27 @@ export default function Sidebar() {
             ></path>{" "}
           </g>
         </svg>
-      </h3>
-      <ul
-        className="sidebar"
-        style={{ listStyle: "none", padding: 0, color: "white" }}
-      >
-        <li>
-          <Link to="/">🏠 Inicio</Link>
-        </li>
-        <li>
-          <Link to="/antonio">👨 Antonio</Link>
-        </li>
-        <li>
-          <Link to="/cristian">👨 Cristian</Link>
-        </li>
-        <li>
-          <Link to="/damian">👨 Damián</Link>
-        </li>
-        <li>
-          <Link to="/rocio">👩 Rocío</Link>
-        </li>
-        <li>
-          <Link to="/json">📄 Datos JSON</Link>
-        </li>
-        <li>
-          <Link to="/api">🌐 API Pública</Link>
-        </li>
-        <li>
-          <Link to="/bitacora">📝 Bitácora</Link>
-        </li>
-      </ul>
-    </div>
+            </h3>
+
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                color: "white",
+              }}
+            >
+              <li><Link to="/">🏠 Inicio</Link></li>
+              <li><Link to="/antonio">👨 Antonio</Link></li>
+              <li><Link to="/cristian">👨 Cristian</Link></li>
+              <li><Link to="/damian">👨 Damián</Link></li>
+              <li><Link to="/rocio">👩 Rocío</Link></li>
+              <li><Link to="/json">📄 Datos JSON</Link></li>
+              <li><Link to="/api">🌐 API Pública</Link></li>
+              <li><Link to="/bitacora">📝 Bitácora</Link></li>
+            </ul>
+          </>
+        )}
+      </div>
+    </>
   );
 }

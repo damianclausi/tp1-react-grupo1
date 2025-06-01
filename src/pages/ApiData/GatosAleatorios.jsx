@@ -26,10 +26,10 @@ export default function GatosAleatorios() {
   if (gatos.length === 0) return <p>Cargando gatos...</p>;
 
   return (
-    <div>
-      <h2>🐱 Gatito Aleatorio</h2>
+    <div style={{ textAlign: "center" }}>
+      <h3>🐱 Gatito Aleatorio</h3>
       <ul
-        style={{ listStyle: "none", padding: 0, display: "flex", gap: "10px" }}
+        style={{ listStyle: "none", padding: 0, display: "flex", gap: "10px", flexDirection: "column"}}
       >
         {gatos.map((gato, index) => (
           <li key={index}>

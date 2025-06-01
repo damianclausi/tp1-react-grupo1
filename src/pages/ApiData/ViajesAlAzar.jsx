@@ -31,8 +31,8 @@ export default function ViajesAlAzar() {
   if (destinos.length === 0) return <p>Cargando destinos de viaje...</p>;
 
   return (
-    <div>
-      <h2>🌍 Destinos de Viaje al Azar</h2>
+    <div style={{ textAlign: "center" }}>
+      <h3>🌍 Destinos de Viaje al Azar</h3>
       <ul>
         {destinos.map((pais) => (
           <li key={pais.cca3}>

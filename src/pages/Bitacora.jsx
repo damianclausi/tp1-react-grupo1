@@ -1,6 +1,8 @@
+import "./Bitacora.css";
+
 export default function Bitacora() {
   return (
-    <div>
+    <div className="bitacora-body">
       <h2>📝 Bitácora del Proyecto - Grupo 1</h2>
 
       <section style={{ marginBottom: '2rem' }}>

@@ -14,7 +14,7 @@ export default function App() {
     <Router>
       <div style={{ display: "flex", minHeight: "100vh", minWidth: "100vw" }}>
         <Sidebar />
-        <div style={{ flex: 1, padding: "2rem" }}>
+        <div style={{ flex: 1}}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/antonio" element={<Antonio />} />

@@ -3,27 +3,20 @@ import "./JsonData.css";
 
 export default function JsonData() {
   return (
-    <div>
+    <div className="json-data">
       <h2>🎬 Lista de Películas (desde JSON)</h2>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "1rem",
-          marginTop: "1rem",
-        }}
-      >
+      <div className="json-data-container">
         {data.map((pelicula) => (
           <div
             key={pelicula.id}
             style={{
-              border: "1px solid #ccc",
+              border: "2px solid rgb(199, 184, 252)",
               padding: "1rem",
               borderRadius: "8px",
-              width: "200px",
-              backgroundColor: "#f9f9f9",
+              backgroundColor: "rgba(255, 249, 249, 0.952)",
               textAlign: "center",
             }}
+            className="json-data-pelicula"
           >
             {pelicula.caratula && (
               <img

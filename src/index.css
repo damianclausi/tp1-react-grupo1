@@ -29,12 +29,14 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: rgb(248, 248, 248); */
   background-color: rgb(231, 226, 255);
   color: black;
 }
 
+
+
 body-home {
+  margin-left: 15rem;
   width: 85%;
   background-color: blue;
 }

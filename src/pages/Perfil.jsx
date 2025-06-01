@@ -13,8 +13,8 @@ const integrantes = [
   {
     id: '2',
     nombre: 'Cristian Descosido',
-    habilidades: ['Python', 'Django', 'PostgreSQL'],
-    icono: ''
+    habilidades: ['HTML5', 'CSS3', 'JavaScript', 'Bases de Datos SQL'],
+    icono: 'https://github.com/damianclausi/tp1-react-grupo1/blob/main/src/assets/foto-perfil.png?raw=true'
   },
   {
     id: '3',

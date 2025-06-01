@@ -1,5 +1,5 @@
 /* Pie de Página */
-footer {
+.cristianContainer footer {
     text-align: center;
     background-color: #f1f1f1;;
     color: light-dark(#6c757d, #f8f9fa);
