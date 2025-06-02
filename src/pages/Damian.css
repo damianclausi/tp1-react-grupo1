@@ -127,3 +127,53 @@
   font-size: 0.98rem;
   color: #444;
 }
+
+@media (max-width: 900px) {
+  .damian-container {
+    width: 90vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .damian-project-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.8rem 0.7rem;
+  }
+  .damian-project-thumb {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .damian-tech {
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  .damian-contact {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+  .damian-container h2 {
+    font-size: 1.3em;
+    padding: 0.5em;
+  }
+  .damian-container h3 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .damian-container {
+    width: 98vw;
+    padding: 0.5rem 0.2rem;
+    border-radius: 18px;
+  }
+  .damian-avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .damian-project-thumb {
+    max-width: 100px;
+  }
+}
