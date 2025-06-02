@@ -1,21 +1,28 @@
 /* Damian.css - Colores modo claro del portfolio personal */
 
 .damian-container {
-  max-width: 600px;
-  margin: 2rem auto;
-  background: #f8fafc;
-  color: #232946;
-  border-radius: 1.5rem;
-  box-shadow: 0 4px 24px rgba(35, 41, 70, 0.1);
+  width: 40vw;
+  margin: 3em auto; /* Espaciado arriba y abajo igual que .rocio-body .header */
+  border-radius: 40px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  background-color: #fff; /* Fondo blanco restaurado */
+  /* Elimina o comenta background-image y gradientes para fondo blanco */
+  /* background-image: none; */
+  /* background-repeat: none; */
+  /* background-size: none; */
+  box-sizing: border-box;
   padding: 2rem 2.5rem;
-  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
 }
 
 .damian-container h2 {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-  color: #3b5bdb;
+  margin-top: 0.5em; /* Espacio arriba igual que abajo */
+  color: #3b5bdb; /* Color original de Damian */
+  font-size: 2em;
+  padding: 1em;
+  margin-bottom: 0.5em;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .damian-avatar {
@@ -23,16 +30,19 @@
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 1rem 0;
+  margin: 1rem auto;
   border: 3px solid #3b5bdb;
   box-shadow: 0 2px 8px rgba(59, 91, 219, 0.1);
+  display: block;
 }
 
 .damian-container h3 {
-  color: #3b5bdb;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  color: #3b5bdb; /* Color original de Damian */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0;
 }
 
 .damian-container ul,
@@ -47,9 +57,12 @@
 
 .damian-tech {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   font-size: 2rem;
   align-items: center;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 

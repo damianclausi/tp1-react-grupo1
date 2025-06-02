@@ -1,4 +1,5 @@
 import './Damian.css';
+import { FaLinux, FaNodeJs, FaReact, FaGithub, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 
 export default function Damian() {
   return (
@@ -10,13 +11,14 @@ export default function Damian() {
         Apasionado por la tecnología desde muy joven. Disfruto explorando proyectos open source y aprendiendo sobre tecnologías libres. Actualmente me formo para ser desarrollador, explorando distintos campos de la informática. Además, me encanta andar en bicicleta y salir a correr.
       </p>
       <h3>Habilidades en programación</h3>
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>HTML5 & CSS3</li>
-        <li>SQL</li>        
-      </ul>
+      <div className="damian-tech">
+        <span title="JavaScript" style={{color:'#f7df1e'}}><FaJsSquare size={38} /></span>
+        <span title="React" style={{color:'#61dafb'}}><FaReact size={38} /></span>
+        <span title="Node.js" style={{color:'#3c873a'}}><FaNodeJs size={38} /></span>
+        <span title="HTML5" style={{color:'#e34c26'}}><FaHtml5 size={38} /></span>
+        <span title="CSS3" style={{color:'#1572b6'}}><FaCss3Alt size={38} /></span>
+        <span title="SQL" style={{color:'#00618a'}}><FaDatabase size={38} /></span>                
+      </div>
       <h3>Proyectos</h3>
       <div className="damian-projects">
         <div className="damian-project-card">
@@ -40,9 +42,9 @@ export default function Damian() {
         <div className="damian-project-card">
           <img src="https://damianclausi.github.io/portfoliopersonal-pfo2/img/avatar.png" alt="Landing Page Startup" className="damian-project-thumb" />
           <div>
-            <strong>Landing Page para Startup</strong><br />
-            <span style={{color:'#888'}}>Demo visual</span>
-            <p className="damian-project-desc">Página de presentación para una startup ficticia, desarrollada con HTML5, CSS3 y JS.</p>
+            <strong>Portfolio Personal</strong><br />
+            <a href="https://damianclausi.github.io/portfoliopersonal-pfo2/" target="_blank" rel="noopener noreferrer" style={{color:'#3b5bdb'}}>Ver Portfolio Personal</a>
+            <p className="damian-project-desc">Página de presentación desarrollada con HTML5, CSS3 y JS.</p>
           </div>
         </div>
       </div>
@@ -56,16 +58,13 @@ export default function Damian() {
         </span>
         <span title="React">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" style={{height:'2.2rem',verticalAlign:'middle'}} />
-        </span>
-        <span title="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style={{height:'2.2rem',verticalAlign:'middle',background:'#fff',borderRadius:'50%'}} />
-        </span>
+        </span>        
         <span title="SQL">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" style={{height:'2.2rem',verticalAlign:'middle'}} />
         </span>
       </div>
       <h3>Contacto</h3>
-      <div className="damian-contact">
+      <div className="damian-contact" style={{justifyContent: 'center', marginBottom: '3em'}}>
         <a href="https://github.com/damianclausi" target="_blank" rel="noopener noreferrer" title="GitHub" style={{display:'flex',alignItems:'center',gap:'0.4rem'}}>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style={{height:'1.7rem',verticalAlign:'middle',background:'#fff',borderRadius:'50%'}} />
           GitHub
