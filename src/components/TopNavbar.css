@@ -27,3 +27,13 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+.top-navbar.hidden {
+  top: -6rem; /* Ocultar la navbar moviéndola hacia arriba */
+  transition: top 0.3s ease;
+}
+
+.top-navbar.visible {
+  top: 0; /* Mostrar la navbar */
+  transition: top 0.3s ease;
+}

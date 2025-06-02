@@ -69,6 +69,9 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .cristianContainer {
+    width: 100vw;
+  }
   .cristianContainer main section {
     border-bottom: 5px solid #f7914d;
     border-left: none;

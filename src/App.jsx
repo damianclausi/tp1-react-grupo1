@@ -13,8 +13,10 @@ import Bitacora from "./pages/Bitacora";
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Estado para controlar el sidebar
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true); // Estado para controlar la visibilidad de la navbar
   const sidebarRef = useRef(null); // Referencia al elemento del sidebar
   const hamburgerButtonRef = useRef(null); // Referencia al botón de hamburguesa
+  const lastScrollTop = useRef(0); // Referencia para la última posición de scroll
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -39,9 +41,31 @@ export default function App() {
     };
   }, [sidebarRef, hamburgerButtonRef]); // Añadir hamburgerButtonRef a las dependencias
 
+  // Ocultar/mostrar navbar al hacer scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollTop > lastScrollTop.current) {
+        // Scrolling down
+        setIsNavbarVisible(false);
+      } else {
+        // Scrolling up
+        setIsNavbarVisible(true);
+      }
+      lastScrollTop.current = currentScrollTop <= 0 ? 0 : currentScrollTop; // Para dispositivos iOS
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Router>
-      <TopNavbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} hamburgerButtonRef={hamburgerButtonRef} /> {/* Pasar la referencia del botón */}
+      <TopNavbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} hamburgerButtonRef={hamburgerButtonRef} isNavbarVisible={isNavbarVisible} /> {/* Pasar la referencia del botón y el estado de visibilidad */}
       <div style={{ display: "flex", minHeight: "100vh", minWidth: "100vw", paddingTop: "4rem" }}> {/* Ajustar padding superior */}
         <Sidebar isOpen={isSidebarOpen} sidebarRef={sidebarRef} /> {/* Pasar el estado isOpen y la referencia al Sidebar */}
         <div style={{ flex: 1, paddingLeft: isSidebarOpen ? "0" : "0", transition: "padding-left 0.3s ease" }}> {/* Ajustar padding izquierdo en lugar de margin */}
