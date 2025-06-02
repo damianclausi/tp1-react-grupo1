@@ -29,11 +29,20 @@
 }
 
 .top-navbar.hidden {
-  top: -6rem; /* Ocultar la navbar moviéndola hacia arriba */
+  top: -6rem;
+  /* Ocultar la navbar moviéndola hacia arriba */
   transition: top 0.3s ease;
 }
 
 .top-navbar.visible {
-  top: 0; /* Mostrar la navbar */
+  top: 0;
+  /* Mostrar la navbar */
   transition: top 0.3s ease;
+}
+
+.icono-grupo {
+  height: 2rem;
+  /* Ajustar la altura de la imagen */
+  margin-right: 1rem;
+  /* Espacio entre la imagen y el botón */
 }
