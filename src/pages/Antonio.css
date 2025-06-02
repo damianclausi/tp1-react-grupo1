@@ -1,6 +1,7 @@
 .antonio-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 3em;
   padding: 2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
