@@ -4,7 +4,7 @@
 }
 
 .json-data {
-  margin-left: 15rem;
+  margin: auto;
 }
 
 .json-data h2 {
@@ -40,10 +40,10 @@
 }
 
 @media (max-width: 768px) {
-  .json-data{
+  .json-data {
     margin-left: 0;
   }
-  
+
   .json-data-container {
     width: 100vw;
     height: 100%;

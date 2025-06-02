@@ -6,6 +6,10 @@
     text-align: left;
 }
 
+#contacto form input {
+    background-color: #ccc;
+}
+
 .cristianContainer.dark-theme #contacto {
     background-color: #222222;
 }
@@ -22,8 +26,8 @@
     border: 1px solid light-dark(#ccc, #6c757d);
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: light-dark(#fff, #555);
-    color: light-dark(#000, #fff);
+    background-color: #fff;
+    color: #000;
 }
 
 #contacto button {

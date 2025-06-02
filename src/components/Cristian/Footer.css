@@ -2,7 +2,7 @@
 .cristianContainer footer {
     text-align: center;
     background-color: #f1f1f1;;
-    color: light-dark(#6c757d, #f8f9fa);
+    color:#6c757d;
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -26,10 +26,10 @@ footer ul {
 }
 
 footer a {
-    color: light-dark(#333, #f1f1f1);
+    color:#333;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: light-dark(#080808, #e2e0e0);
+    color: #535353;
 }

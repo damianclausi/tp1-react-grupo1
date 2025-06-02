@@ -1,8 +1,9 @@
 /* Estilos para la Navegación */
 nav {
     padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
     margin-bottom: 15px;
-    background-color: light-dark(#f1f1f1, #171717);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,7 +21,7 @@ nav ul {
 
 nav a {
     font-weight: bold;
-    color: light-dark(#333, #f1f1f1);
+    color: #333;
     text-decoration: none;
 }
 

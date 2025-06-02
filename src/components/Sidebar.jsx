@@ -1,54 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+// Eliminar useState y useEffect ya que la visibilidad se controla desde App.jsx
 
-export default function Sidebar() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [open, setOpen] = useState(false);
-
-  // Escuchar cambios de tamaño de ventana
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-      if (window.innerWidth >= 768) {
-        setOpen(true); // siempre abierto en desktop
-      } else {
-        setOpen(false); // cerrado en mobile por defecto
-      }
-    };
-
-    handleResize(); // configurar en primer render
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+export default function Sidebar({ isOpen, sidebarRef }) { // Recibir isOpen y sidebarRef como props
   return (
     <>
-      {/* Botón hamburguesa solo en móvil */}
-      {isMobile && (
-        <button
-          onClick={() => setOpen(!open)}
-          style={{
-            position: "fixed",
-            top: "1rem",
-            left: "1rem",
-            zIndex: 1000,
-            background: "transparent",
-            border: "none",
-            fontSize: "2rem",
-            color: "white",
-            cursor: "pointer",
-          }}
-        >
-          ☰
-        </button>
-      )}
-
       {/* Sidebar */}
       <div
+        ref={sidebarRef} // Asignar la referencia al div principal del sidebar
         style={{
-          width: open ? "15rem" : isMobile ? "0" : "15rem",
+          width: isOpen ? "15rem" : "0", // Usar isOpen para controlar el ancho
           backgroundColor: "rgb(91, 59, 206)",
-          padding: open ? "2rem" : isMobile ? "0" : "2rem",
+          padding: isOpen ? "2rem" : "0", // Usar isOpen para controlar el padding
           borderRadius: "0 20px 20px 0",
           overflow: "hidden",
           transition: "width 0.3s ease, padding 0.3s ease",
@@ -56,10 +18,10 @@ export default function Sidebar() {
           position: "fixed",
           top: 0,
           left: 0,
-          zIndex: 999,
+          zIndex:999
         }}
       >
-        {open && (
+        {isOpen && ( // Renderizar contenido solo si isOpen es true
           <>
             <h3 style={{ textAlign: "center" }}>
             <svg
@@ -86,7 +48,7 @@ export default function Sidebar() {
               fill="#ffffff"
             ></path>{" "}
             <path
-              d="M14.9697 8.46967C15.2626 8.17678 15.7374 8.17678 16.0303 8.46967L16.2387 8.67801C16.874 9.3133 17.4038 9.84308 17.7678 10.3202C18.1521 10.8238 18.4216 11.3559 18.4216 12C18.4216 12.6441 18.1521 13.1762 17.7678 13.6798C17.4038 14.1569 16.874 14.6867 16.2387 15.322L16.0303 15.5303C15.7374 15.8232 15.2626 15.8232 14.9697 15.5303C14.6768 15.2374 14.6768 14.7626 14.9697 14.4697L15.1412 14.2981C15.8229 13.6164 16.2797 13.1574 16.5753 12.7699C16.8577 12.3998 16.9216 12.1843 16.9216 12C16.9216 11.8157 16.8577 11.6002 16.5753 11.2301C16.2797 10.8426 15.8229 10.3836 15.1412 9.70191L14.9697 9.53033C14.6768 9.23744 14.6768 8.76257 14.9697 8.46967Z"
+              d="M14.9697 8.46967C15.2626 8.17678 15.7374 8.17678 16.0303 8.46967L16.2387 8.67801C16.874 9.31330 17.4038 9.84308 17.7678 10.3202C18.1521 10.8238 18.4216 11.3559 18.4216 12C18.4216 12.6441 18.1521 13.1762 17.7678 13.6798C17.4038 14.1569 16.874 14.6867 16.2387 15.322L16.0303 15.5303C15.7374 15.8232 15.2626 15.8232 14.9697 15.5303C14.6768 15.2374 14.6768 14.7626 14.9697 14.4697L15.1412 14.2981C15.8229 13.6164 16.2797 13.1574 16.5753 12.7699C16.8577 12.3998 16.9216 12.1843 16.9216 12C16.9216 11.8157 16.8577 11.6002 16.5753 11.2301C16.2797 10.8426 15.8229 10.3836 15.1412 9.70191L14.9697 9.53033C14.6768 9.23744 14.6768 8.76257 14.9697 8.46967Z"
               fill="#ffffff"
             ></path>{" "}
             <path

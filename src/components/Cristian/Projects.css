@@ -34,12 +34,9 @@
 
 .tarjeta h3,
 .tarjeta p {
-    color: #272626;
+    color: #dddcdc;
 }
 
-.cristianContainer.dark-theme .tarjeta h3 {
-    color: #272626;
-}
 /* Estilo para el icono de enlace en las tarjetas */
 .tarjeta h3 .link-icon::after {
     content: '\1F517';
